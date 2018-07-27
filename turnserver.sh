@@ -28,6 +28,16 @@ then
         echo listening-ip=$EXTERNAL_IP >> /etc/turnserver.conf
     fi
 
+    if [ -z $ALLOW_TLS ]
+    then
+        echo no-tls >> /etc/turnserver.conf
+    fi
+
+    if [ -z $ALLOW_DTLS ]
+    then
+        echo no-dtls >> /etc/turnserver.conf
+    fi
+
     touch /tmp/turnserver.configured
 fi
 
