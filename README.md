@@ -22,3 +22,5 @@ Environment Parameters
 * PORT -- listening port for STUN and TURN
 * LISTEN_ON_PUBLIC_IP -- bind to the external IP
 * USE_IPV4 -- forces IPv4 when determining the external IP
+* ALLOW_TLS -- Set TLS as default
+* ALLOW_DTLS -- Set DTLS as default
